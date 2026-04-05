@@ -1,0 +1,2 @@
+compose class notes : https://docker77.hashnode.dev/scaling-in-docker-compose-with-hands-on-examples
+stack class notes: https://docker77.hashnode.dev/docker-stack-simplifying-multi-container-applications-on-cluster

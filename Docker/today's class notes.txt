@@ -1,0 +1,1 @@
+todays class notes link : https://docker77.hashnode.dev/a-beginners-guide-to-docker-registry-what-why-and-how

@@ -1,0 +1,62 @@
+todays commands:
+
+
+    1  yum install git docker -y && systemctl start docker
+
+    2  docker run -itd --name sonar -p 9000:9000 sonarqube:lts-community
+
+    3  vim jenkins.sh
+
+    4  sh jenkins.sh
+
+    5  cat /var/lib/jenkins/secrets/initialAdminPassword
+
+    6  wget https://github.com/aquasecurity/trivy/releases/download/v0.18.3/trivy_0.18.3_Linux-64bit.tar.gz
+
+    7  tar zxvf trivy_0.18.3_Linux-64bit.tar.gz
+
+    8  sudo mv trivy /usr/local/bin/
+
+    9  ll /var/lib/jenkins/workspace/MyDeployment/target/
+
+   10  ll /var/lib/jenkins/workspace/MyDeployment/
+
+   11  ll /var/lib/jenkins/workspace/MyDeployment/Docker-app/
+
+   12  cat /var/lib/jenkins/workspace/MyDeployment/Docker-app/Dockerfile
+
+   13  ll /var/lib/jenkins/workspace/MyDeployment/Docker-app/
+
+   14  chmod 777 /var/run/docker.sock
+
+   15  docker images
+
+   16  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+   17  # Apply executable permissions
+
+   18  sudo chmod +x /usr/local/bin/docker-compose
+
+   19  # Create a symbolic link
+
+   20  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+   21  # Install using pip (Python package manager)
+
+   22  sudo yum install -y python3-pip
+
+   23  sudo pip3 install docker-compose
+
+   24  #check version
+
+   25  docker-compose --version
+
+   26  docker ps
+
+   27  docker exec -it devopsdb bash
+
+   28  docker ps
+
+   29  docker run   --detach   --name newrelic-infra   --network=host   --cap-add=SYS_PTRACE   --privileged   --pid=host   --volume "/:/host:ro"   --volume "/var/run/docker.sock:/var/run/docker.sock"   --volume "newrelic-infra:/etc/newrelic-infra"   --env NRIA_LICENSE_KEY=889c16a07a3199c66aa8f5c3b745f817FFFFNRAL   newrelic/infrastructure:latest
+
+   30  docker ps

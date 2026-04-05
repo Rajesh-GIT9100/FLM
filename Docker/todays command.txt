@@ -1,0 +1,25 @@
+yum install git docker -y && systemctl start docker
+
+    2  docker run -itd --name sonar -p 9000:9000 sonarqube:lts-community
+
+    3  wget https://github.com/aquasecurity/trivy/releases/download/v0.18.3/trivy_0.18.3_Linux-64bit.tar.gz
+
+    4  tar zxvf trivy_0.18.3_Linux-64bit.tar.gz
+
+    5  sudo mv trivy /usr/local/bin/
+
+    6  trivy --version
+
+    7  vim jenkins.sh
+
+    8  sh jenkins.sh
+
+    9  cat /var/lib/jenkins/secrets/initialAdminPassword
+
+   10  docker ps
+
+   11  chmod 777 /var/run/docker.sock
+
+   12  docker images
+
+   13  history
